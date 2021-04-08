@@ -1,24 +1,21 @@
-# README
+# E-disk - dysk via WWW
+Magazyn plików
+* ograniczony rozmiar e-dysku dla pojedynczego użytkownika 
+* możliwość tworzenia katalogów
+* operacje na plikach lub katalogach: 
+  * załaduj
+  * sciągnij
+  * udostępnij (plik dostępny publicznie do
+pobrania na podstawie linka, np. do umieszczenia zdjęcia na aukcjach, blogach, stronach www)
+  * nowy katalog
+  * zmiana nazwy 
+  * wytnij
+  * wklej
+  * usuń
+    
+projekt dla grupy maksymalnie 3-osobowej
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Projekt wykonali:
+* Mateusz Białowąs
+* Maciej Bociuk
+* Mateusz Sekściński
