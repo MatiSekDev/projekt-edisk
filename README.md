@@ -19,3 +19,6 @@ projekt dla grupy maksymalnie 3-osobowej
 * Mateusz Białowąs
 * Maciej Bociuk
 * Mateusz Sekściński
+
+
+---
