@@ -121,13 +121,22 @@ Rails.application.configure do
   host = 'edisk.herokuapp.com' #replace with your own url
   config.action_mailer.default_url_options = { host: host }
 
-  # SMTP settings for gmail
+  # # SMTP settings for gmail
+  # config.action_mailer.smtp_settings = {
+  #   :address              => "smtp.gmail.com",
+  #   :port                 => 587,
+  #   :user_name            => Rails.application.credentials.gmail_username,
+  #   :password             => Rails.application.credentials.gmail_password,
+  #   :authentication       => "plain",
+  #   :enable_starttls_auto => true
+  # }
   config.action_mailer.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :user_name            => Rails.application.credentials.gmail_username,
-    :password             => Rails.application.credentials.gmail_password,
-    :authentication       => "plain",
-    :enable_starttls_auto => true
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "edisk.herokuapp.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: Rails.application.credentials.gmail_username,
+    password: Rails.application.credentials.gmail_password,
   }
 end
