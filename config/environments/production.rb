@@ -137,6 +137,6 @@ Rails.application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: Rails.application.credentials.gmail_username,
-    password: Rails.application.credentials.gmail_password,
+    password: Rails.application.credentials.gmail_password_prod,
   }
 end
