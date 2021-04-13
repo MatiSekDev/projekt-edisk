@@ -42,6 +42,3 @@ yarn-debug.log*
 
 # Ignore Ruby Mine
 .idea/
-
-# Ignore master key for decrypting creddentials and more
-config/master.key
