@@ -1,6 +1,7 @@
 class SessionsController < ApplicationController
 
   def new
+
   end
 
   def create
@@ -11,7 +12,7 @@ class SessionsController < ApplicationController
     else
       flash.alert = "Invalid email or password"
       redirect_to sign_in_path
-      # render :new --Dlaczego to nie działa?
+      # render :new --to chyba nie działa, spytaj się dlaczego
     end
 
   end
