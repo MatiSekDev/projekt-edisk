@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_14_182609) do
+ActiveRecord::Schema.define(version: 2021_04_14_201015) do
 
   create_table "edisk_directories", force: :cascade do |t|
     t.string "name"
@@ -23,9 +23,9 @@ ActiveRecord::Schema.define(version: 2021_04_14_182609) do
   create_table "edisk_files", force: :cascade do |t|
     t.string "name"
     t.string "file_type"
-    t.boolean "shared"
+    t.boolean "shared", default: false
     t.string "path"
-    t.integer "size"
+    t.integer "edisk_size"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_04_14_182609) do
     t.string "username"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "account_size"
+    t.integer "account_size", default: 0
   end
 
 end

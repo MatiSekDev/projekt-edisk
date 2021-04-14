@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :email
       t.string :password_digest
       t.string :username
-      t.integer :account_size, :default => "1".to_i #account size
+      t.integer :account_size, :default => 1
 
       t.timestamps
     end
