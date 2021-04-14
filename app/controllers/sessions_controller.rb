@@ -10,7 +10,8 @@ class SessionsController < ApplicationController
       redirect_to root_path, notice: "Logged In succesfully"
     else
       flash.alert = "Invalid email or password"
-      render :new
+      redirect_to sign_in_path
+      # render :new --to chyba nie działa, spytaj się dlaczego
     end
 
   end
